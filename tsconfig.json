@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"composite": true,
+		"target": "ESNext",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"outDir": "dist",
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		"skipLibCheck": true
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "aoc2023",
+	"devDependencies": {
+		"dprint": "^0.41.0",
+		"typescript": "^5.3.2"
+	}
+}
