@@ -1,319 +1,19 @@
-export type AsLines<String> = String extends
-	`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer X8}\n${infer X9}\n${infer X10}\n${infer X11}\n${infer X12}\n${infer X13}\n${infer X14}\n${infer X15}\n${infer X16}\n${infer X17}\n${infer X18}\n${infer X19}\n${infer X20}\n${infer X21}\n${infer X22}\n${infer X23}\n${infer X24}\n${infer X25}\n${infer X26}\n${infer X27}\n${infer X28}\n${infer X29}\n${infer X30}\n${infer X31}\n${infer X32}\n${infer X33}\n${infer X34}\n${infer X35}\n${infer X36}\n${infer X37}\n${infer X38}\n${infer X39}\n${infer X40}\n${infer X41}\n${infer X42}\n${infer X43}\n${infer X44}\n${infer X45}\n${infer X46}\n${infer X47}\n${infer X48}\n${infer X49}\n${infer X50}\n${infer X51}\n${infer X52}\n${infer X53}\n${infer X54}\n${infer X55}\n${infer X56}\n${infer X57}\n${infer X58}\n${infer X59}\n${infer X60}\n${infer X61}\n${infer X62}\n${infer X63}\n${infer X64}\n${infer X65}\n${infer X66}\n${infer X67}\n${infer X68}\n${infer X69}\n${infer X70}\n${infer X71}\n${infer X72}\n${infer X73}\n${infer X74}\n${infer X75}\n${infer X76}\n${infer X77}\n${infer X78}\n${infer X79}\n${infer X80}\n${infer X81}\n${infer X82}\n${infer X83}\n${infer X84}\n${infer X85}\n${infer X86}\n${infer X87}\n${infer X88}\n${infer X89}\n${infer X90}\n${infer X91}\n${infer X92}\n${infer X93}\n${infer X94}\n${infer X95}\n${infer X96}\n${infer X97}\n${infer X98}\n${infer X99}\n${infer X100}\n${infer X101}\n${infer X102}\n${infer X103}\n${infer X104}\n${infer X105}\n${infer X106}\n${infer X107}\n${infer X108}\n${infer X109}\n${infer X110}\n${infer X111}\n${infer X112}\n${infer X113}\n${infer X114}\n${infer X115}\n${infer X116}\n${infer X117}\n${infer X118}\n${infer X119}\n${infer X120}\n${infer X121}\n${infer X122}\n${infer X123}\n${infer X124}\n${infer X125}\n${infer X126}\n${infer X127}\n${infer Z}`
-	? [
-		X0,
-		X1,
-		X2,
-		X3,
-		X4,
-		X5,
-		X6,
-		X7,
-		X8,
-		X9,
-		X10,
-		X11,
-		X12,
-		X13,
-		X14,
-		X15,
-		X16,
-		X17,
-		X18,
-		X19,
-		X20,
-		X21,
-		X22,
-		X23,
-		X24,
-		X25,
-		X26,
-		X27,
-		X28,
-		X29,
-		X30,
-		X31,
-		X32,
-		X33,
-		X34,
-		X35,
-		X36,
-		X37,
-		X38,
-		X39,
-		X40,
-		X41,
-		X42,
-		X43,
-		X44,
-		X45,
-		X46,
-		X47,
-		X48,
-		X49,
-		X50,
-		X51,
-		X52,
-		X53,
-		X54,
-		X55,
-		X56,
-		X57,
-		X58,
-		X59,
-		X60,
-		X61,
-		X62,
-		X63,
-		X64,
-		X65,
-		X66,
-		X67,
-		X68,
-		X69,
-		X70,
-		X71,
-		X72,
-		X73,
-		X74,
-		X75,
-		X76,
-		X77,
-		X78,
-		X79,
-		X80,
-		X81,
-		X82,
-		X83,
-		X84,
-		X85,
-		X86,
-		X87,
-		X88,
-		X89,
-		X90,
-		X91,
-		X92,
-		X93,
-		X94,
-		X95,
-		X96,
-		X97,
-		X98,
-		X99,
-		X100,
-		X101,
-		X102,
-		X103,
-		X104,
-		X105,
-		X106,
-		X107,
-		X108,
-		X109,
-		X110,
-		X111,
-		X112,
-		X113,
-		X114,
-		X115,
-		X116,
-		X117,
-		X118,
-		X119,
-		X120,
-		X121,
-		X122,
-		X123,
-		X124,
-		X125,
-		X126,
-		X127,
-		...AsLines<Z>,
-	]
-	: String extends
-		`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer X8}\n${infer X9}\n${infer X10}\n${infer X11}\n${infer X12}\n${infer X13}\n${infer X14}\n${infer X15}\n${infer X16}\n${infer X17}\n${infer X18}\n${infer X19}\n${infer X20}\n${infer X21}\n${infer X22}\n${infer X23}\n${infer X24}\n${infer X25}\n${infer X26}\n${infer X27}\n${infer X28}\n${infer X29}\n${infer X30}\n${infer X31}\n${infer X32}\n${infer X33}\n${infer X34}\n${infer X35}\n${infer X36}\n${infer X37}\n${infer X38}\n${infer X39}\n${infer X40}\n${infer X41}\n${infer X42}\n${infer X43}\n${infer X44}\n${infer X45}\n${infer X46}\n${infer X47}\n${infer X48}\n${infer X49}\n${infer X50}\n${infer X51}\n${infer X52}\n${infer X53}\n${infer X54}\n${infer X55}\n${infer X56}\n${infer X57}\n${infer X58}\n${infer X59}\n${infer X60}\n${infer X61}\n${infer X62}\n${infer X63}\n${infer Z}`
-		? [
-			X0,
-			X1,
-			X2,
-			X3,
-			X4,
-			X5,
-			X6,
-			X7,
-			X8,
-			X9,
-			X10,
-			X11,
-			X12,
-			X13,
-			X14,
-			X15,
-			X16,
-			X17,
-			X18,
-			X19,
-			X20,
-			X21,
-			X22,
-			X23,
-			X24,
-			X25,
-			X26,
-			X27,
-			X28,
-			X29,
-			X30,
-			X31,
-			X32,
-			X33,
-			X34,
-			X35,
-			X36,
-			X37,
-			X38,
-			X39,
-			X40,
-			X41,
-			X42,
-			X43,
-			X44,
-			X45,
-			X46,
-			X47,
-			X48,
-			X49,
-			X50,
-			X51,
-			X52,
-			X53,
-			X54,
-			X55,
-			X56,
-			X57,
-			X58,
-			X59,
-			X60,
-			X61,
-			X62,
-			X63,
-			...AsLines<Z>,
-		]
-	: String extends
-		`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer X8}\n${infer X9}\n${infer X10}\n${infer X11}\n${infer X12}\n${infer X13}\n${infer X14}\n${infer X15}\n${infer X16}\n${infer X17}\n${infer X18}\n${infer X19}\n${infer X20}\n${infer X21}\n${infer X22}\n${infer X23}\n${infer X24}\n${infer X25}\n${infer X26}\n${infer X27}\n${infer X28}\n${infer X29}\n${infer X30}\n${infer X31}\n${infer Z}`
-		? [
-			X0,
-			X1,
-			X2,
-			X3,
-			X4,
-			X5,
-			X6,
-			X7,
-			X8,
-			X9,
-			X10,
-			X11,
-			X12,
-			X13,
-			X14,
-			X15,
-			X16,
-			X17,
-			X18,
-			X19,
-			X20,
-			X21,
-			X22,
-			X23,
-			X24,
-			X25,
-			X26,
-			X27,
-			X28,
-			X29,
-			X30,
-			X31,
-			...AsLines<Z>,
-		]
-	: String extends
-		`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer X8}\n${infer X9}\n${infer X10}\n${infer X11}\n${infer X12}\n${infer X13}\n${infer X14}\n${infer X15}\n${infer Z}`
-		? [
-			X0,
-			X1,
-			X2,
-			X3,
-			X4,
-			X5,
-			X6,
-			X7,
-			X8,
-			X9,
-			X10,
-			X11,
-			X12,
-			X13,
-			X14,
-			X15,
-			...AsLines<Z>,
-		]
-	: String extends
-		`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer X8}\n${infer X9}\n${infer X10}\n${infer X11}\n${infer X12}\n${infer X13}\n${infer X14}\n${infer X15}\n${infer Z}`
-		? [
-			X0,
-			X1,
-			X2,
-			X3,
-			X4,
-			X5,
-			X6,
-			X7,
-			X8,
-			X9,
-			X10,
-			X11,
-			X12,
-			X13,
-			X14,
-			X15,
-			...AsLines<Z>,
-		]
-	: String extends
-		`${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer X4}\n${infer X5}\n${infer X6}\n${infer X7}\n${infer Z}`
-		? [
-			X0,
-			X1,
-			X2,
-			X3,
-			X4,
-			X5,
-			X6,
-			X7,
-			...AsLines<Z>,
-		]
-	: String extends `${infer X0}\n${infer X1}\n${infer X2}\n${infer X3}\n${infer Z}` ? [
-			X0,
-			X1,
-			X2,
-			X3,
-			...AsLines<Z>,
-		]
-	: String extends `${infer X0}\n${infer X1}\n${infer Z}` ? [
-			X0,
-			X1,
-			...AsLines<Z>,
-		]
-	: String extends `${infer X0}\n${infer Z}` ? [X0, ...AsLines<Z>]
-	: [String];
+export type RepeatString<N, T extends string, Depth extends any[] = [], State extends string = ""> = N extends
+	Depth["length"] ? State
+	: RepeatString<N, T, [...Depth, any], `${State}${T}`>;
 
-export type AsChars<String> = String extends
-	`${infer X0}${infer X1}${infer X2}${infer X3}${infer X4}${infer X5}${infer X6}${infer X7}${infer Z}`
-	? [X0, X1, X2, X3, X4, X5, X6, X7, ...AsChars<Z>]
-	: String extends `${infer X0}${infer X1}${infer X2}${infer X3}${infer Z}` ? [X0, X1, X2, X3, ...AsChars<Z>]
-	: String extends `${infer X0}${infer X1}${infer Z}` ? [X0, X1, ...AsChars<Z>]
-	: String extends `${infer X0}${infer Z}` ? [X0, ...AsChars<Z>]
-	: [];
+type BatchLines<T, State extends any[] = []> = T extends `${RepeatString<999, `${any}\n`>}${infer Rest}`
+	? T extends `${infer X}\n${Rest}` ? BatchLines<Rest, [...State, X]> : never
+	: [...State, T];
+
+type LinesFromBatches<T, State extends any[] = []> = T extends [string, ...infer Rest]
+	? LinesFromBatches<Rest, [...State, ...Split<"\n", T[0]>]>
+	: State;
+
+export type AsLines<T> = LinesFromBatches<BatchLines<T>>;
+
+export type AsChars<T, State extends string[] = []> = T extends `${infer X}${infer Rest}` ? AsChars<Rest, [...State, X]>
+	: State;
 
 export type Split<Delim extends string, T, State extends any[] = []> = T extends `${infer X}${Delim}${infer Rest}`
 	? Split<Delim, Rest, [...State, X]>
@@ -1581,9 +1281,12 @@ export type MulTDNumImpl<A, B extends TDNum, State extends any[] = [], Depth ext
 		: State;
 
 /** multiply two TDNums */
-export type MulTDNum<A, B extends TDNum, State extends any[] = [], Depth extends "0"[] = []> =
+export type MulTDNum<A, B, State extends any[] = [], Depth extends "0"[] = []> =
 	/* dprint-ignore */
-	SumTDNums<MulTDNumImpl<A, B>>;
+	SumTDNums<MulTDNumImpl<A, B extends TDNum ? B : never>>;
+
+export type TupleNOf<N, T, State extends any[] = []> = State["length"] extends N ? State
+	: TupleNOf<N, T, [...State, T]>;
 
 type Tuple1 = [any];
 type Tuple2 = [...Tuple1, ...Tuple1];
@@ -1621,7 +1324,9 @@ type SumTDNumsImpl<T> =
 	>>>>>>>>>>>>>>>>>>>>>>;
 
 /** sum a tuple of TDNums into a single TDNum */
-export type SumTDNums<T> = SumTDNumsImpl<T> extends [any] ? SumTDNumsImpl<T>[0] : "Too many nums to sum";
+export type SumTDNums<T> = T extends [] ? ["0"]
+	: SumTDNumsImpl<T> extends [any] ? SumTDNumsImpl<T>[0]
+	: "Too many nums to sum";
 
 /** convert TDNum to decimal number string */
 export type TDNumToString<T, State extends string = ""> = T extends [Digit, ...infer Rest]
