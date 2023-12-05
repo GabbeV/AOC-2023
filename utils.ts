@@ -41,7 +41,17 @@ export type LastOf<Of extends string, T> =
 		: T extends `${any}${infer Rest}` ? LastOf<Of, Rest> : never;
 
 /** number represented as a reversed tuple of decimal digits */
-type TDNum = Digit[];
+export type TDNum = Digit[];
+
+export type TDNum1 = ["1"];
+export type TDNum2 = ["2"];
+
+/** number represented as the length of a tuple */
+export type TNum = any[];
+
+export type TNum0 = [];
+export type TNum1 = [any];
+export type TNum2 = [any, any];
 
 export type ToTDNum<T, State extends TDNum = []> = (T extends number ? `${T}` : T) extends `${infer X}${infer Rest}`
 	? ToTDNum<Rest, [X extends Digit ? X : never, ...State]>
@@ -1284,6 +1294,16 @@ export type MulTDNumImpl<A, B extends TDNum, State extends any[] = [], Depth ext
 export type MulTDNum<A, B, State extends any[] = [], Depth extends "0"[] = []> =
 	/* dprint-ignore */
 	SumTDNums<MulTDNumImpl<A, B extends TDNum ? B : never>>;
+
+/** computes 2**T where T is a TNum returning a TNum */
+export type Pow2TNum<T extends any[], State extends any[] = [0]> = T extends [any, ...infer Rest]
+	? Pow2TNum<Rest, [...State, ...State]>
+	: State;
+
+/** Filters the tuple T retaining elements that extend F */
+export type FilterTuple<F, T, State extends any[] = []> = T extends [infer X, ...infer Rest]
+	? FilterTuple<F, Rest, X extends F ? [...State, X] : State>
+	: State;
 
 export type TupleNOf<N, T, State extends any[] = []> = State["length"] extends N ? State
 	: TupleNOf<N, T, [...State, T]>;
